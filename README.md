@@ -122,14 +122,31 @@ You can easily customize the image generation by:
 
 ## 📝 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project's code is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-The MIT License is a permissive license that is short and to the point. It lets people do anything they want with your code as long as they provide attribution back to you and don't hold you liable. Specifically, this means:
+⚠️ **Important License Notice**
 
+While our code is MIT licensed, the actual usage of this project is subject to the licenses of the AI models being used. Each model has its own terms and conditions that **must** be followed:
+
+1. **CompVis/stable-diffusion-v1-4**: [CreativeML Open RAIL-M License](https://huggingface.co/CompVis/stable-diffusion-v1-4/blob/main/LICENSE)
+2. **stabilityai/stable-diffusion-2-1**: [CreativeML Open RAIL-S License](https://huggingface.co/stabilityai/stable-diffusion-2-1/blob/main/LICENSE.md)
+3. **stable-diffusion-v1-5**: [CreativeML Open RAIL-M License](https://huggingface.co/runwayml/stable-diffusion-v1-5/blob/main/LICENSE.md)
+4. **cagliostrolab/animagine-xl-4.0**: [CreativeML Open RAIL-M License](https://huggingface.co/cagliostrolab/animagine-xl-4.0/blob/main/LICENSE)
+5. **prompthero/openjourney**: [CreativeML Open RAIL-M License](https://huggingface.co/prompthero/openjourney/blob/main/LICENSE)
+
+**Your use of this project must comply with all licenses involved, including both our MIT license and the respective AI model licenses.**
+
+The MIT License for our code allows:
 - ✅ Commercial use
 - ✅ Modification
 - ✅ Distribution
 - ✅ Private use
 - ✅ Sublicensing
 
-Note: While this project's code is MIT licensed, the AI models used have their own licenses and terms of use. Please refer to each model's documentation for their specific usage terms.
+However, these permissions are limited by the AI model licenses. For example, some models may:
+- ⚠️ Restrict commercial use
+- ⚠️ Require attribution
+- ⚠️ Have specific usage guidelines
+- ⚠️ Prohibit certain types of content generation
+
+**Please review each model's license before using it in your projects.**
