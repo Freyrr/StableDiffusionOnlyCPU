@@ -1,6 +1,23 @@
 # CPU-Only Stable Diffusion Image Generator
 
-A lightweight and efficient implementation of Stable Diffusion that runs entirely on CPU, making it accessible for users without dedicated GPUs. This project leverages multiple state-of-the-art AI models to provide diverse image generation capabilities, allowing users to experiment with different model architectures and styles.
+[![Python](https://img.shields.io/badge/Python-3.12%2B-blue.svg)](https://www.python.org/downloads/)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Freyrr/StableDiffusionOnlyCPU/graphs/commit-activity)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+[![CPU Only](https://img.shields.io/badge/CPU-Only-orange.svg)]()
+[![Stable Diffusion](https://img.shields.io/badge/Stable%20Diffusion-v1.4%20|%20v1.5%20|%20v2.1-blue.svg)]()
+[![AI Models](https://img.shields.io/badge/AI%20Models-5%2B-purple.svg)]()
+[![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%96%20HuggingFace-Models-yellow.svg)](https://huggingface.co/)
+
+Benvenuti nel progetto CPU-Only Stable Diffusion Image Generator! Questo è un potente strumento che democratizza la generazione di immagini tramite AI, rendendo accessibile a tutti la magia della creazione artistica attraverso l'intelligenza artificiale, anche senza disporre di costose GPU.
+
+Questo progetto innovativo ti permette di sperimentare con diversi modelli di Stable Diffusion e altre architetture AI, tutti ottimizzati per funzionare esclusivamente su CPU. Potrai generare immagini straordinarie semplicemente descrivendo ciò che desideri vedere, e il sistema utilizzerà automaticamente multiple versioni di modelli AI per offrirti diverse interpretazioni della tua idea.
+
+Immagina di poter creare arte digitale, concept art, illustrazioni o qualsiasi altra forma di contenuto visivo semplicemente descrivendo la tua visione in parole. Questo è esattamente ciò che questo progetto ti permette di fare, offrendo:
+
+- La possibilità di confrontare i risultati tra diversi modelli AI
+- Un'implementazione ottimizzata per CPU che non richiede hardware specializzato
+- Un'interfaccia semplice e intuitiva per la generazione di immagini
+- La libertà di sperimentare con diversi stili e approcci artistici
 
 ## 🌟 Features
 
@@ -46,6 +63,12 @@ The project includes several carefully selected AI models, each with its own str
 
 Each model will process the same prompt, allowing you to compare different interpretations and choose the best result for your needs.
 
+## 📊 Performance
+
+- Average generation time: 2-3 minutes per image on CPU
+- Memory usage: ~4-6GB RAM during generation
+- Disk space required: ~10GB for all models
+
 ## System Requirements
 
 - Python 3.12 or higher
@@ -87,6 +110,17 @@ StableDiffusionOnlyCPU/
 └── README.md         # Documentation
 ```
 
+## 🔧 Configuration
+
+You can customize the generation parameters in `config.py`:
+
+```python
+# Example configuration
+MAX_MEMORY = "4GB"  # Maximum memory usage
+BATCH_SIZE = 1      # Number of images to generate
+STEPS = 20          # Number of inference steps
+```
+
 ## 🎨 Usage
 
 To generate images with all available models:
@@ -106,6 +140,20 @@ You can easily customize the image generation by:
 1. Modifying the prompt in `main.py`
 2. Enabling/disabling specific models in the `AVAILABLE_MODELS` list
 3. Adjusting the output directory in the `generate_and_save_image` function
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) for details on the latest updates and modifications.
 
 ## Main Dependencies
 
@@ -135,13 +183,6 @@ While our code is MIT licensed, the actual usage of this project is subject to t
 5. **prompthero/openjourney**: [CreativeML Open RAIL-M License](https://huggingface.co/prompthero/openjourney/blob/main/LICENSE)
 
 **Your use of this project must comply with all licenses involved, including both our MIT license and the respective AI model licenses.**
-
-The MIT License for our code allows:
-- ✅ Commercial use
-- ✅ Modification
-- ✅ Distribution
-- ✅ Private use
-- ✅ Sublicensing
 
 However, these permissions are limited by the AI model licenses. For example, some models may:
 - ⚠️ Restrict commercial use
